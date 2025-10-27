@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - TIKAWALA Prime Clean Solutions</title>
+    <meta name="description" content="Before and after transformations from our projects across Bokaro, Jharkhand">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/custom.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="font-sans antialiased">
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="text-2xl font-bold text-green-600">TIKAWALA</a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-green-600 font-medium">Home</a>
+                    <a href="about.html" class="text-gray-700 hover:text-green-600 font-medium">About</a>
+                    <a href="services.html" class="text-gray-700 hover:text-green-600 font-medium">Services</a>
+                    <a href="gallery.html" class="text-green-600 font-medium">Gallery</a>
+                    <a href="blog.html" class="text-gray-700 hover:text-green-600 font-medium">Blog</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-green-600 font-medium">Contact</a>
+                </div>
+                <div class="hidden md:block">
+                    <a href="contact.html"
+                        class="bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700 transition">
+                        Get Free Quote
+                    </a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-gray-700">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="index.html" class="block px-3 py-2 text-gray-700 hover:bg-green-50 rounded">Home</a>
+                <a href="about.html" class="block px-3 py-2 text-gray-700 hover:bg-green-50 rounded">About</a>
+                <a href="services.html" class="block px-3 py-2 text-gray-700 hover:bg-green-50 rounded">Services</a>
+                <a href="gallery.html" class="block px-3 py-2 bg-green-50 text-green-600 rounded">Gallery</a>
+                <a href="blog.html" class="block px-3 py-2 text-gray-700 hover:bg-green-50 rounded">Blog</a>
+                <a href="contact.html" class="block px-3 py-2 text-gray-700 hover:bg-green-50 rounded">Contact</a>
+                <a href="contact.html" class="block mx-3 my-2 px-3 py-2 bg-green-600 text-white text-center rounded">Get
+                    Free Quote</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-20 bg-gradient-to-br from-green-50 to-blue-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+                    Our Work Gallery
+                </h1>
+                <p class="text-xl text-gray-600">
+                    Before and after transformations from our projects across Bokaro, Jharkhand
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Category Filter -->
+    <section class="py-8 bg-white border-b">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-wrap justify-center gap-4">
+                <button class="filter-btn active px-6 py-2 rounded-full bg-green-600 text-white font-semibold"
+                    data-category="all">
+                    All
+                </button>
+                <button
+                    class="filter-btn px-6 py-2 rounded-full bg-gray-200 text-gray-700 font-semibold hover:bg-green-100"
+                    data-category="residential">
+                    Residential
+                </button>
+                <button
+                    class="filter-btn px-6 py-2 rounded-full bg-gray-200 text-gray-700 font-semibold hover:bg-green-100"
+                    data-category="commercial">
+                    Commercial
+                </button>
+                <button
+                    class="filter-btn px-6 py-2 rounded-full bg-gray-200 text-gray-700 font-semibold hover:bg-green-100"
+                    data-category="landscaping">
+                    Landscaping
+                </button>
+                <button
+                    class="filter-btn px-6 py-2 rounded-full bg-gray-200 text-gray-700 font-semibold hover:bg-green-100"
+                    data-category="turf-care">
+                    Turf Care
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div id="gallery-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Gallery Item 1 -->
+                <div class="gallery-item bg-white rounded-lg overflow-hidden shadow-lg" data-category="residential">
+                    <div class="relative h-80 before-after-container">
+                        <img src="https://images.unsplash.com/photo-1584480694444-83e55e81f8ad?w=500&h=500&fit=crop"
+                            alt="Before" class="before-image w-full h-full object-cover">
+                        <img src="https://images.unsplash.com/photo-1584699682551-41abc90e7a64?w=500&h=500&fit=crop"
+                            alt="After"
+                            class="after-image w-full h-full object-cover absolute top-0 left-0 opacity-0 transition-opacity duration-300">
+                        <div
+                            class="absolute top-4 right-4 bg-green-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                            Residential
+                        </div>
+                        <div
+                            class="absolute bottom-4 left-4 bg-black bg-opacity-50 text-white px-3 py-1 rounded text-sm hover-label">
+                            Hover to see After
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold text-gray-900 mb-1">Residential Deep Cleaning</h3>
+                        <p class="text-gray-600 text-sm flex items-center">
+                            <i data-lucide="map-pin" class="w-4 h-4 mr-1"></i>
+                            Bokaro, Jharkhand
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 2 -->
+                <div class="gallery-item bg-white rounded-lg overflow-hidden shadow-lg" data-category="commercial">
+                    <div class="relative h-80 before-after-container">
+                        <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=500&h=500&fit=crop"
+                            alt="Before" class="before-image w-full h-full object-cover">
+                        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=500&h=500&fit=crop"
+                            alt="After"
+                            class="after-image w-full h-full object-cover absolute top-0 left-0 opacity-0 transition-opacity duration-300">
+                        <div
+                            class="absolute top-4 right-4 bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                            Commercial
+                        </div>
+                        <div
+                            class="absolute bottom-4 left-4 bg-black bg-opacity-50 text-white px-3 py-1 rounded text-sm hover-label">
+                            Hover to see After
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold text-gray-900 mb-1">Office Space Cleaning</h3>
+                        <p class="text-gray-600 text-sm flex items-center">
+                            <i data-lucide="map-pin" class="w-4 h-4 mr-1"></i>
+                            Bokaro, Jharkhand
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 3 -->
+                <div class="gallery-item bg-white rounded-lg overflow-hidden shadow-lg" data-category="landscaping">
+                    <div class="relative h-80 before-after-container">
+                        <img src="https://images.unsplash.com/photo-1585765524967-84b6df48bba9?w=500&h=500&fit=crop"
+                            alt="Before" class="before-image w-full h-full object-cover">
+                        <img src="https://images.unsplash.com/photo-1584580604694-226d7d3dd3d7?w=500&h=500&fit=crop"
+                            alt="After"
+                            class="after-image w-full h-full object-cover absolute top-0 left-0 opacity-0 transition-opacity duration-300">
+                        <div
+                            class="absolute top-4 right-4 bg-emerald-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                            Landscaping
+                        </div>
+                        <div
+                            class="absolute bottom-4 left-4 bg-black bg-opacity-50 text-white px-3 py-1 rounded text-sm hover-label">
+                            Hover to see After
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold text-gray-900 mb-1">Lawn Landscaping</h3>
+                        <p class="text-gray-600 text-sm flex items-center">
+                            <i data-lucide="map-pin" class="w-4 h-4 mr-1"></i>
+                            Bokaro, Jharkhand
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 4 -->
+                <div class="gallery-item bg-white rounded-lg overflow-hidden shadow-lg" data-category="landscaping">
+                    <div class="relative h-80 before-after-container">
+                        <img src="https://images.unsplash.com/photo-1596158627269-a2b0fcf07e4c?w=500&h=500&fit=crop"
+                            alt="Before" class="before-image w-full h-full object-cover">
+                        <img src="https://images.unsplash.com/photo-1588482547258-1d630a4b69fd?w=500&h=500&fit=crop"
+                            alt="After"
+                            class="after-image w-full h-full object-cover absolute top-0 left-0 opacity-0 transition-opacity duration-300">
+                        <div
+                            class="absolute top-4 right-4 bg-emerald-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                            Landscaping
+                        </div>
+                        <div
+                            class="absolute bottom-4 left-4 bg-black bg-opacity-50 text-white px-3 py-1 rounded text-sm hover-label">
+                            Hover to see After
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold text-gray-900 mb-1">Garden Design & Installation</h3>
+                        <p class="text-gray-600 text-sm flex items-center">
+                            <i data-lucide="map-pin" class="w-4 h-4 mr-1"></i>
+                            Bokaro, Jharkhand
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 5 -->
+                <div class="gallery-item bg-white rounded-lg overflow-hidden shadow-lg" data-category="turf-care">
+                    <div class="relative h-80 before-after-container">
+                        <img src="https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=500&h=500&fit=crop"
+                            alt="Before" class="before-image w-full h-full object-cover">
+                        <img src="https://images.unsplash.com/photo-1596358782500-cf3f5d30e2ef?w=500&h=500&fit=crop"
+                            alt="After"
+                            class="after-image w-full h-full object-cover absolute top-0 left-0 opacity-0 transition-opacity duration-300">
+                        <div
+                            class="absolute top-4 right-4 bg-green-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                            Turf Care
+                        </div>
+                        <div
+                            class="absolute bottom-4 left-4 bg-black bg-opacity-50 text-white px-3 py-1 rounded text-sm hover-label">
+                            Hover to see After
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold text-gray-900 mb-1">Turf Maintenance</h3>
+                        <p class="text-gray-600 text-sm flex items-center">
+                            <i data-lucide="map-pin" class="w-4 h-4 mr-1"></i>
+                            Bokaro, Jharkhand
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 6 -->
+                <div class="gallery-item bg-white rounded-lg overflow-hidden shadow-lg" data-category="commercial">
+                    <div class="relative h-80 before-after-container">
+                        <img src="https://images.unsplash.com/photo-1584590685892-cac18d5aecb8?w=500&h=500&fit=crop"
+                            alt="Before" class="before-image w-full h-full object-cover">
+                        <img src="https://images.unsplash.com/photo-1586108924051-eab5f8bc205d?w=500&h=500&fit=crop"
+                            alt="After"
+                            class="after-image w-full h-full object-cover absolute top-0 left-0 opacity-0 transition-opacity duration-300">
+                        <div
+                            class="absolute top-4 right-4 bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                            Commercial
+                        </div>
+                        <div
+                            class="absolute bottom-4 left-4 bg-black bg-opacity-50 text-white px-3 py-1 rounded text-sm hover-label">
+                            Hover to see After
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold text-gray-900 mb-1">Commercial Parking Area</h3>
+                        <p class="text-gray-600 text-sm flex items-center">
+                            <i data-lucide="map-pin" class="w-4 h-4 mr-1"></i>
+                            Bokaro, Jharkhand
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Load More -->
+            <div class="text-center mt-12">
+                <p class="text-gray-600 mb-4">More projects coming soon...</p>
+                <a href="contact.html"
+                    class="inline-block bg-green-600 text-white px-8 py-3 rounded-lg hover:bg-green-700 transition font-semibold">
+                    Request Your Free Quote
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="py-20 bg-green-600">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8 text-center text-white">
+                <div>
+                    <div class="text-4xl md:text-5xl font-bold mb-2">500+</div>
+                    <div class="text-lg opacity-90">Projects Completed</div>
+                </div>
+                <div>
+                    <div class="text-4xl md:text-5xl font-bold mb-2">1000+</div>
+                    <div class="text-lg opacity-90">Satisfied Clients</div>
+                </div>
+                <div>
+                    <div class="text-4xl md:text-5xl font-bold mb-2">100%</div>
+                    <div class="text-lg opacity-90">Satisfaction Guaranteed</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-2xl font-bold text-green-500 mb-4">TIKAWALA</h3>
+                    <p class="text-gray-400 mb-4">Professional cleaning, landscaping, and turf care services in Bokaro,
+                        Jharkhand since 2014.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white">Services</a></li>
+                        <li><a href="gallery.html" class="text-gray-400 hover:text-white">Gallery</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="services.html" class="text-gray-400 hover:text-white">Residential Cleaning</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white">Commercial Cleaning</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white">Landscaping</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white">Turf Care</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Contact Us</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li class="flex items-start">
+                            <i data-lucide="map-pin" class="w-5 h-5 mr-2 mt-1 flex-shrink-0"></i>
+                            <span>Bokaro, Jharkhand</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="phone" class="w-5 h-5 mr-2 flex-shrink-0"></i>
+                            <span>+91 9999 999 999</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="mail" class="w-5 h-5 mr-2 flex-shrink-0"></i>
+                            <span>info@tikawala.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 TIKAWALA Prime Clean Solutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/navigation.js"></script>
+    <script src="js/gallery.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
