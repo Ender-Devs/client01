@@ -1,467 +1,674 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TIKAWALA Prime Clean Solutions - Professional Cleaning, Landscaping & Turf Care in Bokaro</title>
-    <meta name="description"
-        content="Professional residential & commercial cleaning, landscaping, and turf care services in Bokaro, Jharkhand">
-
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/custom.css">
-
-    <!-- Lucide Icons -->
-    <script src="https://unpkg.com/lucide@latest"></script>
+    <title>Home Service Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
-<body class="font-sans antialiased">
-
-    <!-- Navigation -->
-    <nav class="bg-white shadow-lg fixed w-full top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-16">
-                <!-- Logo -->
-                <div class="flex-shrink-0">
-                    <a href="index.html" class="text-2xl font-bold text-green-600">TIKAWALA</a>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <!-- Top Bar -->
+        <div class="top-bar">
+            <div class="container">
+                <!-- Mobile View -->
+                <div class="mobile-top-bar">
+                    <button class="city-btn">
+                        <span>🇮🇳</span> <span>Bangalore</span>
+                    </button>
+                    <a href="#" class="flexi-price-btn">FlexiPrice</a>
+                    <a href="#" class="partner-btn">Partner</a>
+                    <a href="mailto:support@NAME.com" class="email-link">support@NAME.com</a>
+                    <div class="phone-container">
+                        <span>📞</span>
+                        <span>11111111111</span>
+                    </div>
+                    <button class="login-btn">Login</button>
                 </div>
 
-                <!-- Desktop Menu -->
-                <div class="hidden md:flex space-x-8">
-                    <a href="index.html" class="text-gray-700 hover:text-green-600 font-medium">Home</a>
-                    <a href="about.html" class="text-gray-700 hover:text-green-600 font-medium">About</a>
-                    <a href="services.html" class="text-gray-700 hover:text-green-600 font-medium">Services</a>
-                    <a href="gallery.html" class="text-gray-700 hover:text-green-600 font-medium">Gallery</a>
-                    <a href="blog.html" class="text-gray-700 hover:text-green-600 font-medium">Blog</a>
-                    <a href="contact.html" class="text-gray-700 hover:text-green-600 font-medium">Contact</a>
+                <!-- Desktop View -->
+                <div class="desktop-top-bar">
+                    <div class="left-section">
+                        <button class="city-btn desktop">
+                            <span>🇮🇳</span> Bangalore
+                        </button>
+                        <a href="#" class="flexi-price-btn">FlexiPrice</a>
+                        <a href="#" class="partner-btn">Partner With Us</a>
+                    </div>
+                    <div class="right-section">
+                        <a href="mailto:support@NAME.com" class="email-link">support@NAME.com</a>
+                        <div class="phone-container">
+                            <span>📞</span>
+                            <span>Call Now: 11111111111</span>
+                        </div>
+                        <button class="login-btn desktop">Login / Sign Up</button>
+                    </div>
                 </div>
-
-                <!-- CTA Button -->
-                <div class="hidden md:block">
-                    <a href="contact.html"
-                        class="bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700 transition">
-                        Get Free Quote
-                    </a>
-                </div>
-
-                <!-- Mobile Menu Button -->
-                <button id="mobile-menu-btn" class="md:hidden text-gray-700">
-                    <i data-lucide="menu" class="w-6 h-6"></i>
-                </button>
             </div>
         </div>
 
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
-            <div class="px-2 pt-2 pb-3 space-y-1">
-                <a href="index.html" class="block px-3 py-2 text-gray-700 hover:bg-green-50 rounded">Home</a>
-                <a href="about.html" class="block px-3 py-2 text-gray-700 hover:bg-green-50 rounded">About</a>
-                <a href="services.html" class="block px-3 py-2 text-gray-700 hover:bg-green-50 rounded">Services</a>
-                <a href="gallery.html" class="block px-3 py-2 text-gray-700 hover:bg-green-50 rounded">Gallery</a>
-                <a href="blog.html" class="block px-3 py-2 text-gray-700 hover:bg-green-50 rounded">Blog</a>
-                <a href="contact.html" class="block px-3 py-2 text-gray-700 hover:bg-green-50 rounded">Contact</a>
-                <a href="contact.html" class="block mx-3 my-2 px-3 py-2 bg-green-600 text-white text-center rounded">Get
-                    Free Quote</a>
+        <!-- Main Header -->
+        <div class="main-header">
+            <div class="container">
+                <div class="header-content">
+                    <div class="logo">
+                        <span class="logo-box">LOGO</span>
+                        <span class="logo-text">NAME</span>
+                    </div>
+
+                    <!-- Desktop Navigation -->
+                    <nav class="desktop-nav" role="navigation" aria-label="Main navigation">
+                        <div class="nav-item dropdown" data-service="cleaning">
+                            <button class="nav-btn" aria-expanded="false" aria-haspopup="true" aria-controls="cleaning-dropdown">
+                                Cleaning Services
+                                <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                            </button>
+                            <div class="dropdown-menu" id="cleaning-dropdown" role="menu">
+                                <ul role="none">
+                                    <li role="none"><a href="#" role="menuitem">Deep Home Cleaning</a></li>
+                                    <li role="none"><a href="#" role="menuitem">Commercial Cleaning</a></li>
+                                    <li role="none"><a href="#" role="menuitem">Bathroom Cleaning</a></li>
+                                    <li role="none"><a href="#" role="menuitem">Kitchen Cleaning</a></li>
+                                    <li role="none"><a href="#" role="menuitem">Window Cleaning</a></li>
+                                    <li role="none"><a href="#" role="menuitem">After Party Cleaning</a></li>
+                                    <li role="none"><a href="#" role="menuitem">Carpet Cleaning</a></li>
+                                    <li role="none"><a href="#" role="menuitem">Sofa Cleaning</a></li>
+                                    <li role="none"><a href="#" role="menuitem">Office Cleaning</a></li>
+                                    <li role="none"><a href="#" role="menuitem">Balcony Cleaning</a></li>
+                                    <li role="none"><a href="#" role="menuitem">Refrigerator Cleaning</a></li>
+                                </ul>
+                                <a href="#" class="view-all">View All Cleaning Services</a>
+                            </div>
+                        </div>
+
+                        <div class="nav-item dropdown" data-service="pest">
+                            <button class="nav-btn">
+                                Pest Control
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a href="#">General Pest Control</a></li>
+                                    <li><a href="#">Bed Bug Control</a></li>
+                                    <li><a href="#">Cockroach Control</a></li>
+                                    <li><a href="#">Termite Control</a></li>
+                                    <li><a href="#">Rodent Control</a></li>
+                                    <li><a href="#">Wood Borer Control</a></li>
+                                    <li><a href="#">Mosquito Pest Control</a></li>
+                                    <li><a href="#">Ant Control</a></li>
+                                </ul>
+                                <a href="#" class="view-all">View All Pest Control</a>
+                            </div>
+                        </div>
+
+                        <div class="nav-item dropdown" data-service="painting">
+                            <button class="nav-btn">
+                                Home Painting
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a href="#">Exterior Wall Painting</a></li>
+                                    <li><a href="#">Interior Wall Painting</a></li>
+                                    <li><a href="#">Vacant Flat Painting</a></li>
+                                </ul>
+                                <a href="#" class="view-all">View All Home Painting</a>
+                            </div>
+                        </div>
+
+                        <div class="nav-item dropdown" data-service="spa">
+                            <button class="nav-btn">
+                                Spa and Salon
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a href="#">Spa Services</a></li>
+                                    <li><a href="#">Hair Care</a></li>
+                                    <li><a href="#">Beauty Services</a></li>
+                                </ul>
+                                <a href="#" class="view-all">View All Spa and Salon</a>
+                            </div>
+                        </div>
+                    </nav>
+
+                    <!-- Desktop Certifications -->
+                    <div class="certifications">
+                        <img src="https://via.placeholder.com/32x32/666/fff?text=C" alt="Certified">
+                        <img src="https://via.placeholder.com/32x32/666/fff?text=SI" alt="Startup India">
+                        <img src="https://via.placeholder.com/32x32/666/fff?text=ISO" alt="ISO">
+                        <img src="https://via.placeholder.com/32x32/666/fff?text=MSME" alt="MSME">
+                    </div>
+
+                    <!-- Mobile Menu Button -->
+                    <button class="mobile-menu-btn" id="mobileMenuBtn" aria-expanded="false" aria-controls="mobileNav" aria-label="Toggle mobile menu">
+                        <i class="fas fa-bars" id="menuIcon" aria-hidden="true"></i>
+                    </button>
+                </div>
             </div>
         </div>
-    </nav>
+
+        <!-- Mobile Navigation -->
+        <div class="mobile-nav" id="mobileNav" role="navigation" aria-label="Mobile navigation">
+            <nav class="mobile-nav-content">
+                <div class="mobile-nav-item">
+                    <button class="mobile-nav-btn" data-target="cleaning-mobile" aria-expanded="false" aria-controls="cleaning-mobile">
+                        Cleaning Services
+                        <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                    </button>
+                    <div class="mobile-dropdown" id="cleaning-mobile">
+                        <ul>
+                            <li><a href="#">Deep Home Cleaning</a></li>
+                            <li><a href="#">Commercial Cleaning</a></li>
+                            <li><a href="#">Bathroom Cleaning</a></li>
+                            <li><a href="#">Kitchen Cleaning</a></li>
+                            <li><a href="#">Window Cleaning</a></li>
+                            <li><a href="#">After Party Cleaning</a></li>
+                            <li><a href="#">Carpet Cleaning</a></li>
+                            <li><a href="#">Sofa Cleaning</a></li>
+                            <li><a href="#">Office Cleaning</a></li>
+                            <li><a href="#">Balcony Cleaning</a></li>
+                            <li><a href="#">Refrigerator Cleaning</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mobile-nav-item">
+                    <button class="mobile-nav-btn" data-target="pest-mobile">
+                        Pest Control
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="mobile-dropdown" id="pest-mobile">
+                        <ul>
+                            <li><a href="#">General Pest Control</a></li>
+                            <li><a href="#">Bed Bug Control</a></li>
+                            <li><a href="#">Cockroach Control</a></li>
+                            <li><a href="#">Termite Control</a></li>
+                            <li><a href="#">Rodent Control</a></li>
+                            <li><a href="#">Wood Borer Control</a></li>
+                            <li><a href="#">Mosquito Pest Control</a></li>
+                            <li><a href="#">Ant Control</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mobile-nav-item">
+                    <button class="mobile-nav-btn" data-target="painting-mobile">
+                        Home Painting
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="mobile-dropdown" id="painting-mobile">
+                        <ul>
+                            <li><a href="#">Exterior Wall Painting</a></li>
+                            <li><a href="#">Interior Wall Painting</a></li>
+                            <li><a href="#">Vacant Flat Painting</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mobile-nav-item">
+                    <button class="mobile-nav-btn" data-target="spa-mobile">
+                        Spa and Salon
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="mobile-dropdown" id="spa-mobile">
+                        <ul>
+                            <li><a href="#">Spa Services</a></li>
+                            <li><a href="#">Hair Care</a></li>
+                            <li><a href="#">Beauty Services</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
 
     <!-- Hero Section -->
-    <section class="pt-20 bg-gradient-to-br from-green-50 to-blue-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div>
-                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
-                        Professional Cleaning & Landscaping Services in <span class="text-green-600">Bokaro</span>
-                    </h1>
-                    <p class="text-xl text-gray-600 mb-8">
-                        Professional residential & commercial cleaning, landscaping, and turf care services in Bokaro,
-                        Jharkhand
-                    </p>
-                    <div class="flex flex-col sm:flex-row gap-4">
-                        <a href="contact.html"
-                            class="bg-green-600 text-white px-8 py-4 rounded-lg hover:bg-green-700 transition text-center font-semibold">
-                            Get Free Quote
-                        </a>
-                        <a href="tel:+919999999999"
-                            class="bg-white text-green-600 border-2 border-green-600 px-8 py-4 rounded-lg hover:bg-green-50 transition text-center font-semibold">
-                            Call Now
-                        </a>
-                    </div>
-                </div>
-                <div class="hidden md:block">
-                    <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&h=600&fit=crop"
-                        alt="Professional Cleaning Services" class="rounded-lg shadow-2xl">
-                </div>
-            </div>
+    <section class="hero">
+        <!-- Hero Banner -->
+        <div class="hero-banner">
+            <h1>On Demand - Home Service at Door Step</h1>
         </div>
-    </section>
 
-    <!-- Services Section -->
-    <section class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Services</h2>
-                <p class="text-xl text-gray-600">Comprehensive cleaning, landscaping, and turf care solutions tailored
-                    for your needs</p>
-            </div>
-
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Service Card 1 -->
-                <div class="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-xl transition duration-300">
-                    <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
-                        <i data-lucide="home" class="w-6 h-6 text-green-600"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">Residential Cleaning</h3>
-                    <p class="text-gray-600 mb-4">Deep cleaning, regular maintenance, and specialized home cleaning
-                        services.</p>
-                    <a href="service-detail.html" class="text-green-600 font-semibold hover:text-green-700">Learn More
-                        →</a>
-                </div>
-
-                <!-- Service Card 2 -->
-                <div class="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-xl transition duration-300">
-                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
-                        <i data-lucide="building" class="w-6 h-6 text-blue-600"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">Commercial Cleaning</h3>
-                    <p class="text-gray-600 mb-4">Office spaces, retail stores, and commercial property cleaning
-                        solutions.</p>
-                    <a href="service-detail.html" class="text-green-600 font-semibold hover:text-green-700">Learn More
-                        →</a>
-                </div>
-
-                <!-- Service Card 3 -->
-                <div class="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-xl transition duration-300">
-                    <div class="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center mb-4">
-                        <i data-lucide="tree-deciduous" class="w-6 h-6 text-emerald-600"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">Landscaping</h3>
-                    <p class="text-gray-600 mb-4">Garden design, lawn care, and complete outdoor transformation
-                        services.</p>
-                    <a href="service-detail.html" class="text-green-600 font-semibold hover:text-green-700">Learn More
-                        →</a>
-                </div>
-
-                <!-- Service Card 4 -->
-                <div class="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-xl transition duration-300">
-                    <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
-                        <i data-lucide="sprout" class="w-6 h-6 text-green-600"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">Turf Care</h3>
-                    <p class="text-gray-600 mb-4">Professional turf installation, maintenance, and lawn health services.
-                    </p>
-                    <a href="service-detail.html" class="text-green-600 font-semibold hover:text-green-700">Learn More
-                        →</a>
-                </div>
-
-                <!-- Service Card 5 -->
-                <div class="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-xl transition duration-300">
-                    <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
-                        <i data-lucide="sparkles" class="w-6 h-6 text-purple-600"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">Deep Cleaning</h3>
-                    <p class="text-gray-600 mb-4">Intensive cleaning services for homes and commercial spaces.</p>
-                    <a href="service-detail.html" class="text-green-600 font-semibold hover:text-green-700">Learn More
-                        →</a>
-                </div>
-
-                <!-- Service Card 6 -->
-                <div class="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-xl transition duration-300">
-                    <div class="w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center mb-4">
-                        <i data-lucide="shield-check" class="w-6 h-6 text-yellow-600"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">Sanitization</h3>
-                    <p class="text-gray-600 mb-4">Professional sanitization and disinfection services for all spaces.
-                    </p>
-                    <a href="service-detail.html" class="text-green-600 font-semibold hover:text-green-700">Learn More
-                        →</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Why Choose Us Section -->
-    <section class="py-20 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Why Choose TIKAWALA?</h2>
-                <p class="text-xl text-gray-600">We set the standard for quality and reliability in Bokaro</p>
-            </div>
-
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div class="text-center">
-                    <div class="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i data-lucide="award" class="w-8 h-8 text-white"></i>
-                    </div>
-                    <h3 class="text-lg font-bold text-gray-900 mb-2">Certified Professionals</h3>
-                    <p class="text-gray-600">Trained and certified team members with years of experience.</p>
-                </div>
-
-                <div class="text-center">
-                    <div class="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i data-lucide="leaf" class="w-8 h-8 text-white"></i>
-                    </div>
-                    <h3 class="text-lg font-bold text-gray-900 mb-2">Eco-Friendly</h3>
-                    <p class="text-gray-600">Safe, green products that protect your family and environment.</p>
-                </div>
-
-                <div class="text-center">
-                    <div class="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i data-lucide="shield" class="w-8 h-8 text-white"></i>
-                    </div>
-                    <h3 class="text-lg font-bold text-gray-900 mb-2">100% Satisfaction</h3>
-                    <p class="text-gray-600">We guarantee your satisfaction or we'll make it right.</p>
-                </div>
-
-                <div class="text-center">
-                    <div class="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i data-lucide="map-pin" class="w-8 h-8 text-white"></i>
-                    </div>
-                    <h3 class="text-lg font-bold text-gray-900 mb-2">Local Expertise</h3>
-                    <p class="text-gray-600">Deep understanding of Bokaro's unique climate and needs.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Stats Section -->
-    <section class="py-20 bg-green-600">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
-                <div class="text-center text-white">
-                    <div class="text-4xl md:text-5xl font-bold mb-2">10+</div>
-                    <div class="text-lg opacity-90">Years of Experience</div>
-                </div>
-                <div class="text-center text-white">
-                    <div class="text-4xl md:text-5xl font-bold mb-2">1000+</div>
-                    <div class="text-lg opacity-90">Happy Clients</div>
-                </div>
-                <div class="text-center text-white">
-                    <div class="text-4xl md:text-5xl font-bold mb-2">5000+</div>
-                    <div class="text-lg opacity-90">Projects Completed</div>
-                </div>
-                <div class="text-center text-white">
-                    <div class="text-4xl md:text-5xl font-bold mb-2">100%</div>
-                    <div class="text-lg opacity-90">Satisfaction Rate</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">What Our Clients Say</h2>
-                <p class="text-xl text-gray-600">Real testimonials from satisfied customers across Bokaro</p>
-            </div>
-
-            <div class="grid md:grid-cols-3 gap-8">
-                <!-- Testimonial 1 -->
-                <div class="bg-gray-50 p-6 rounded-lg">
-                    <div class="flex mb-4">
-                        <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-current"></i>
-                        <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-current"></i>
-                        <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-current"></i>
-                        <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-current"></i>
-                        <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-current"></i>
-                    </div>
-                    <p class="text-gray-700 mb-4">"Excellent service! They transformed our office space completely.
-                        Highly professional and reliable team."</p>
-                    <div class="flex items-center">
-                        <div
-                            class="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center text-white font-bold mr-3">
-                            R
+        <!-- Search Section -->
+        <div class="search-section">
+            <div class="container">
+                <div class="search-card">
+                    <!-- City Selector and Search Row -->
+                    <div class="search-row">
+                        <div class="city-selector">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <select>
+                                <option>Bangalore</option>
+                                <option>Hyderabad</option>
+                                <option>Chennai</option>
+                                <option>Pune</option>
+                                <option>Kolkata</option>
+                            </select>
                         </div>
-                        <div>
-                            <div class="font-bold text-gray-900">Rajesh Kumar</div>
-                            <div class="text-sm text-gray-600">Bokaro</div>
+
+                        <div class="search-input">
+                            <i class="fas fa-search"></i>
+                            <input type="text" placeholder="Search for services">
                         </div>
                     </div>
+
+                    <!-- Search Button -->
+                    <button class="search-btn">Search</button>
                 </div>
 
-                <!-- Testimonial 2 -->
-                <div class="bg-gray-50 p-6 rounded-lg">
-                    <div class="flex mb-4">
-                        <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-current"></i>
-                        <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-current"></i>
-                        <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-current"></i>
-                        <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-current"></i>
-                        <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-current"></i>
+                <!-- Service Icons Grid -->
+                <div class="service-grid">
+                    <div class="service-item">
+                        <div class="service-icon">🧹</div>
+                        <p>Cleaning</p>
                     </div>
-                    <p class="text-gray-700 mb-4">"Best landscaping service in Bokaro! Our garden looks amazing. Worth
-                        every rupee spent."</p>
-                    <div class="flex items-center">
-                        <div
-                            class="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center text-white font-bold mr-3">
-                            P
-                        </div>
-                        <div>
-                            <div class="font-bold text-gray-900">Priya Singh</div>
-                            <div class="text-sm text-gray-600">Bokaro</div>
-                        </div>
+                    <div class="service-item">
+                        <div class="service-icon">🐛</div>
+                        <p>Pest Control</p>
                     </div>
-                </div>
-
-                <!-- Testimonial 3 -->
-                <div class="bg-gray-50 p-6 rounded-lg">
-                    <div class="flex mb-4">
-                        <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-current"></i>
-                        <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-current"></i>
-                        <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-current"></i>
-                        <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-current"></i>
-                        <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-current"></i>
+                    <div class="service-item">
+                        <div class="service-icon">🎨</div>
+                        <p>Painting</p>
                     </div>
-                    <p class="text-gray-700 mb-4">"Reliable and punctual. We've been using their services for 2 years
-                        now. Highly recommended!"</p>
-                    <div class="flex items-center">
-                        <div
-                            class="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center text-white font-bold mr-3">
-                            A
-                        </div>
-                        <div>
-                            <div class="font-bold text-gray-900">Amit Sharma</div>
-                            <div class="text-sm text-gray-600">Bokaro</div>
-                        </div>
+                    <div class="service-item">
+                        <div class="service-icon">🧪</div>
+                        <p>Virus Fumigation & Sanitization</p>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-icon">💅</div>
+                        <p>Salon For Women</p>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-icon">❄️</div>
+                        <p>AC Services & Repair</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects Gallery Preview -->
-    <section class="py-20 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Recent Projects</h2>
-                <p class="text-xl text-gray-600">Before and after transformations from our projects in Bokaro</p>
-            </div>
-
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition">
-                    <img src="https://images.unsplash.com/photo-1584699682551-41abc90e7a64?w=400&h=300&fit=crop"
-                        alt="Residential Cleaning Project" class="w-full h-64 object-cover">
-                    <div class="p-4">
-                        <h3 class="font-bold text-gray-900 mb-2">Residential Deep Cleaning</h3>
-                        <p class="text-gray-600 text-sm">Complete home transformation in Bokaro</p>
-                    </div>
+    <!-- Service Sections -->
+    <section class="service-sections">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-card-icon">🧹</div>
+                    <h3>Cleaning Services</h3>
+                    <p>Professional cleaning services for your home and office. Deep cleaning, regular maintenance, and specialized cleaning solutions.</p>
+                    <a href="#" class="service-card-link">Learn More</a>
                 </div>
-
-                <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition">
-                    <img src="https://images.unsplash.com/photo-1584580604694-226d7d3dd3d7?w=400&h=300&fit=crop"
-                        alt="Landscaping Project" class="w-full h-64 object-cover">
-                    <div class="p-4">
-                        <h3 class="font-bold text-gray-900 mb-2">Garden Landscaping</h3>
-                        <p class="text-gray-600 text-sm">Beautiful garden design and installation</p>
-                    </div>
+                <div class="service-card">
+                    <div class="service-card-icon">🐛</div>
+                    <h3>Pest Control</h3>
+                    <p>Comprehensive pest control solutions to keep your space safe and pest-free. Effective treatments for all types of pests.</p>
+                    <a href="#" class="service-card-link">Learn More</a>
                 </div>
-
-                <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition">
-                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=400&h=300&fit=crop"
-                        alt="Commercial Cleaning Project" class="w-full h-64 object-cover">
-                    <div class="p-4">
-                        <h3 class="font-bold text-gray-900 mb-2">Office Space Cleaning</h3>
-                        <p class="text-gray-600 text-sm">Professional commercial space maintenance</p>
-                    </div>
+                <div class="service-card">
+                    <div class="service-card-icon">🎨</div>
+                    <h3>Home Painting</h3>
+                    <p>Transform your space with our professional painting services. Interior and exterior painting with quality materials.</p>
+                    <a href="#" class="service-card-link">Learn More</a>
                 </div>
-            </div>
-
-            <div class="text-center mt-12">
-                <a href="gallery.html"
-                    class="inline-block bg-green-600 text-white px-8 py-3 rounded-lg hover:bg-green-700 transition font-semibold">
-                    View Full Gallery
-                </a>
+                <div class="service-card">
+                    <div class="service-card-icon">💅</div>
+                    <h3>Spa & Salon</h3>
+                    <p>Relax and rejuvenate with our premium spa and salon services. Professional beauty treatments at your doorstep.</p>
+                    <a href="#" class="service-card-link">Learn More</a>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="py-20 bg-green-600">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Ready to Transform Your Space?</h2>
-            <p class="text-xl text-white opacity-90 mb-8">Get a free, no-obligation quote or call us today</p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="contact.html"
-                    class="bg-white text-green-600 px-8 py-4 rounded-lg hover:bg-gray-100 transition font-semibold">
-                    Get Free Quote
-                </a>
-                <a href="tel:+919999999999"
-                    class="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg hover:bg-white hover:text-green-600 transition font-semibold">
-                    Call +91 9999 999 999
-                </a>
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Customers Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Excellent service! The cleaning team was professional and thorough. My house looks amazing!"</p>
+                    <div class="customer-info">
+                        <strong>Sarah Johnson</strong>
+                        <span>Bangalore</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Quick and effective pest control service. No more issues with cockroaches. Highly recommended!"</p>
+                    <div class="customer-info">
+                        <strong>Raj Patel</strong>
+                        <span>Hyderabad</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"The painting job was fantastic. They completed it on time and the quality exceeded my expectations."</p>
+                    <div class="customer-info">
+                        <strong>Priya Sharma</strong>
+                        <span>Chennai</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-section">
+        <div class="container">
+            <h2 class="section-title">Why Choose Us?</h2>
+            <div class="why-grid">
+                <div class="why-item">
+                    <div class="why-icon">✓</div>
+                    <h3>Trusted Professionals</h3>
+                    <p>All our service providers are verified, trained, and experienced professionals.</p>
+                </div>
+                <div class="why-item">
+                    <div class="why-icon">🛡️</div>
+                    <h3>100% Safe & Secure</h3>
+                    <p>We ensure complete safety and security with proper background checks and insurance.</p>
+                </div>
+                <div class="why-item">
+                    <div class="why-icon">💰</div>
+                    <h3>Best Prices</h3>
+                    <p>Competitive pricing with transparent billing. No hidden charges.</p>
+                </div>
+                <div class="why-item">
+                    <div class="why-icon">⏰</div>
+                    <h3>On-Time Service</h3>
+                    <p>We respect your time and ensure services are delivered as scheduled.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">50,000+</div>
+                    <div class="stat-label">Happy Customers</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">1,000+</div>
+                    <div class="stat-label">Service Providers</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">25+</div>
+                    <div class="stat-label">Cities</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">100+</div>
+                    <div class="stat-label">Services</div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid md:grid-cols-4 gap-8 mb-8">
-                <!-- Company Info -->
-                <div>
-                    <h3 class="text-2xl font-bold text-green-500 mb-4">TIKAWALA</h3>
-                    <p class="text-gray-400 mb-4">Professional cleaning, landscaping, and turf care services in Bokaro,
-                        Jharkhand since 2014.</p>
+    <footer class="footer">
+        <!-- Desktop Footer -->
+        <div class="desktop-footer">
+            <div class="container">
+                <div class="footer-content">
+                    <!-- Services -->
+                    <div class="footer-column">
+                        <h3>Our Services</h3>
+                        <ul>
+                            <li><a href="#">Cleaning</a></li>
+                            <li><a href="#">Pest Control</a></li>
+                            <li><a href="#">Painting</a></li>
+                            <li><a href="#">AC Services & Repair</a></li>
+                            <li><a href="#">Spa & Salon</a></li>
+                            <li><a href="#">Electrical</a></li>
+                            <li><a href="#">Carpenter</a></li>
+                            <li><a href="#">Plumbing</a></li>
+                            <li><a href="#">Sanitization</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- About -->
+                    <div class="footer-column">
+                        <h3>About Us</h3>
+                        <ul>
+                            <li><a href="#">Terms</a></li>
+                            <li><a href="#">Privacy</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Near Me</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Login</a></li>
+                            <li><a href="#">Partner With Us</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Cities -->
+                    <div class="footer-column">
+                        <h3>Serving In India</h3>
+                        <ul>
+                            <li><a href="#">Bangalore</a></li>
+                            <li><a href="#">Bhubaneswar</a></li>
+                            <li><a href="#">Hyderabad</a></li>
+                            <li><a href="#">Chennai</a></li>
+                            <li><a href="#">Pune</a></li>
+                            <li><a href="#">Kolkata</a></li>
+                            <li><a href="#">Dhanbad</a></li>
+                            <li><a href="#">Ranchi</a></li>
+                            <li><a href="#">Jamshedpur</a></li>
+                            <li><a href="#">Bokaro</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Get in Touch -->
+                    <div class="footer-column">
+                        <h3>Get in Touch</h3>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <span>9355739395</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>support@techsquadteam.com</span>
+                            </div>
+                        </div>
+
+                        <div class="social-section">
+                            <p>Follow us on</p>
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-facebook"></i></a>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Quick Links -->
-                <div>
-                    <h4 class="text-lg font-bold mb-4">Quick Links</h4>
-                    <ul class="space-y-2">
-                        <li><a href="index.html" class="text-gray-400 hover:text-white">Home</a></li>
-                        <li><a href="about.html" class="text-gray-400 hover:text-white">About Us</a></li>
-                        <li><a href="services.html" class="text-gray-400 hover:text-white">Services</a></li>
-                        <li><a href="gallery.html" class="text-gray-400 hover:text-white">Gallery</a></li>
-                    </ul>
+                <!-- Addresses -->
+                <div class="addresses">
+                    <div class="address-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <p><strong>Bangalore</strong></p>
+                            <p>123 Tech Park, Whitefield, Bangalore - 560066</p>
+                        </div>
+                    </div>
+                    <div class="address-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <p><strong>Hyderabad</strong></p>
+                            <p>456 IT Hub, HITEC City, Hyderabad - 500081</p>
+                        </div>
+                    </div>
+                    <div class="address-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <p><strong>Chennai</strong></p>
+                            <p>789 Tech Zone, OMR Road, Chennai - 600096</p>
+                        </div>
+                    </div>
+                    <div class="address-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <p><strong>Pune</strong></p>
+                            <p>321 Business District, Hinjewadi, Pune - 411057</p>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Services -->
-                <div>
-                    <h4 class="text-lg font-bold mb-4">Services</h4>
-                    <ul class="space-y-2">
-                        <li><a href="services.html" class="text-gray-400 hover:text-white">Residential Cleaning</a></li>
-                        <li><a href="services.html" class="text-gray-400 hover:text-white">Commercial Cleaning</a></li>
-                        <li><a href="services.html" class="text-gray-400 hover:text-white">Landscaping</a></li>
-                        <li><a href="services.html" class="text-gray-400 hover:text-white">Turf Care</a></li>
-                    </ul>
+                <!-- Copyright -->
+                <div class="copyright">
+                    <p>&copy; 2024 TechSquadTeam. All rights reserved.</p>
                 </div>
+            </div>
+        </div>
 
-                <!-- Contact -->
-                <div>
-                    <h4 class="text-lg font-bold mb-4">Contact Us</h4>
-                    <ul class="space-y-3 text-gray-400">
-                        <li class="flex items-start">
-                            <i data-lucide="map-pin" class="w-5 h-5 mr-2 mt-1 flex-shrink-0"></i>
-                            <span>Bokaro, Jharkhand</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i data-lucide="phone" class="w-5 h-5 mr-2 flex-shrink-0"></i>
-                            <span>+91 9999 999 999</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i data-lucide="mail" class="w-5 h-5 mr-2 flex-shrink-0"></i>
-                            <span>info@tikawala.com</span>
-                        </li>
+        <!-- Mobile Footer -->
+        <div class="mobile-footer">
+            <div class="accordion-section">
+                <button class="accordion-btn" data-target="services-mobile" aria-expanded="false" aria-controls="services-mobile">
+                    Our Services
+                    <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                </button>
+                <div class="accordion-content" id="services-mobile">
+                    <ul>
+                        <li><a href="#">Cleaning</a></li>
+                        <li><a href="#">Pest Control</a></li>
+                        <li><a href="#">Painting</a></li>
+                        <li><a href="#">AC Services & Repair</a></li>
+                        <li><a href="#">Spa & Salon</a></li>
+                        <li><a href="#">Electrical</a></li>
+                        <li><a href="#">Carpenter</a></li>
+                        <li><a href="#">Plumbing</a></li>
+                        <li><a href="#">Sanitization</a></li>
                     </ul>
                 </div>
             </div>
 
-            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
-                <p>&copy; 2025 TIKAWALA Prime Clean Solutions. All rights reserved.</p>
+            <div class="accordion-section">
+                <button class="accordion-btn" data-target="about-mobile" aria-expanded="false" aria-controls="about-mobile">
+                    About Us
+                    <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                </button>
+                <div class="accordion-content" id="about-mobile">
+                    <ul>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Near Me</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">Partner With Us</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="accordion-section">
+                <button class="accordion-btn" data-target="cities-mobile" aria-expanded="false" aria-controls="cities-mobile">
+                    Serving In India
+                    <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                </button>
+                <div class="accordion-content" id="cities-mobile">
+                    <ul>
+                        <li><a href="#">Bangalore</a></li>
+                        <li><a href="#">Bhubaneswar</a></li>
+                        <li><a href="#">Hyderabad</a></li>
+                        <li><a href="#">Chennai</a></li>
+                        <li><a href="#">Pune</a></li>
+                        <li><a href="#">Kolkata</a></li>
+                        <li><a href="#">Dhanbad</a></li>
+                        <li><a href="#">Ranchi</a></li>
+                        <li><a href="#">Jamshedpur</a></li>
+                        <li><a href="#">Bokaro</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="accordion-section">
+                <button class="accordion-btn" data-target="contact-mobile" aria-expanded="false" aria-controls="contact-mobile">
+                    Get in Touch
+                    <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                </button>
+                <div class="accordion-content" id="contact-mobile">
+                    <div class="contact-item">
+                        <i class="fas fa-phone" aria-hidden="true"></i>
+                        <span>9355739395</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope" aria-hidden="true"></i>
+                        <span>support@techsquadteam.com</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-section">
+                <button class="accordion-btn" data-target="social-mobile" aria-expanded="false" aria-controls="social-mobile">
+                    Follow us on
+                    <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                </button>
+                <div class="accordion-content" id="social-mobile">
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-section">
+                <button class="accordion-btn" data-target="address-mobile" aria-expanded="false" aria-controls="address-mobile">
+                    Our Locations
+                    <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                </button>
+                <div class="accordion-content" id="address-mobile">
+                    <div class="address-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <p><strong>Bangalore</strong></p>
+                            <p>123 Tech Park, Whitefield, Bangalore - 560066</p>
+                        </div>
+                    </div>
+                    <div class="address-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <p><strong>Hyderabad</strong></p>
+                            <p>456 IT Hub, HITEC City, Hyderabad - 500081</p>
+                        </div>
+                    </div>
+                    <div class="address-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <p><strong>Chennai</strong></p>
+                            <p>789 Tech Zone, OMR Road, Chennai - 600096</p>
+                        </div>
+                    </div>
+                    <div class="address-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <p><strong>Pune</strong></p>
+                            <p>321 Business District, Hinjewadi, Pune - 411057</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="mobile-copyright">
+                <p>&copy; 2024 TechSquadTeam. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    <!-- Scripts -->
-    <script src="js/navigation.js"></script>
-    <script src="js/main.js"></script>
-    <script>
-        lucide.createIcons();
-    </script>
+    <script src="script.js"></script>
 </body>
-
 </html>
