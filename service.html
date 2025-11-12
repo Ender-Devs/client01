@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="pageTitle">Service - Tikawala Prime</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <!-- Top Bar -->
+        <div class="top-bar">
+            <div class="container">
+                <div class="mobile-top-bar">
+                    <span class="discount-text">DISCOUNT UP TO 20% FOR NEW MEMBERS!</span>
+                    <span class="location-text">🇮🇳 Bokaro, Jharkhand</span>
+                </div>
+                <div class="desktop-top-bar">
+                    <span class="discount-text">DISCOUNT UP TO 20% FOR NEW MEMBERS!</span>
+                    <a href="mailto:tikawalagroupprimecleansolutions@gmail.com"
+                        class="email-link">tikawalagroupprimecleansolutions@gmail.com</a>
+                    <span class="location-text">🇮🇳 Bokaro Jharkhand</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Header -->
+        <div class="main-header">
+            <div class="container">
+                <div class="header-content">
+                    <div class="logo">
+                        <a href="index.html"
+                            style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 0.5rem;">
+                            <span class="logo-box">LOGO</span>
+                            <span class="logo-text">Tikawala Prime</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Service Detail Hero -->
+    <section class="hero">
+        <div class="hero-banner" style="height: 16rem; margin-top: 3rem;">
+            <div style="text-align: center;">
+                <div class="service-icon" id="serviceIcon" style="font-size: 4rem; margin-bottom: 1rem;">🧹</div>
+                <h1 id="serviceName" style="color: white; font-size: 2rem; font-weight: bold;">Service Name</h1>
+                <a href="index.html"
+                    style="color: white; text-decoration: underline; display: inline-block; margin-top: 1rem; font-size: 0.875rem;">
+                    <i class="fas fa-arrow-left"></i> Back to Home
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Description Section -->
+    <section class="service-sections" style="padding: 3rem 0;">
+        <div class="container">
+            <div class="services-grid" style="grid-template-columns: 1fr;">
+                <div class="service-card">
+                    <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">About This Service</h3>
+                    <p id="serviceDescription" style="text-align: left; line-height: 1.8;">Loading service details...
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="why-section">
+        <div class="container">
+            <h2 class="section-title">What We Offer</h2>
+            <div class="why-grid" id="featuresList">
+                <!-- Features will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Form Section -->
+    <section class="service-sections" style="padding: 4rem 0;">
+        <div class="container">
+            <h2 class="section-title">Book This Service Now</h2>
+            <div
+                style="max-width: 600px; margin: 0 auto; background: white; padding: 2rem; border-radius: 0.5rem; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                <form id="bookingForm">
+                    <div style="margin-bottom: 1.5rem;">
+                        <label
+                            style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: var(--foreground);">Your
+                            Name *</label>
+                        <input type="text" id="name" required placeholder="Enter your full name"
+                            style="width: 100%; padding: 0.75rem; border: 2px solid var(--border); border-radius: 0.5rem; font-family: 'Poppins', sans-serif; font-size: 1rem;">
+                    </div>
+
+                    <div style="margin-bottom: 1.5rem;">
+                        <label
+                            style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: var(--foreground);">Phone
+                            Number *</label>
+                        <input type="tel" id="phone" required placeholder="Enter your 10-digit number"
+                            pattern="[0-9]{10}"
+                            style="width: 100%; padding: 0.75rem; border: 2px solid var(--border); border-radius: 0.5rem; font-family: 'Poppins', sans-serif; font-size: 1rem;">
+                    </div>
+
+                    <div style="margin-bottom: 1.5rem;">
+                        <label
+                            style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: var(--foreground);">Email
+                            Address</label>
+                        <input type="email" id="email" placeholder="your.email@example.com"
+                            style="width: 100%; padding: 0.75rem; border: 2px solid var(--border); border-radius: 0.5rem; font-family: 'Poppins', sans-serif; font-size: 1rem;">
+                    </div>
+
+                    <div style="margin-bottom: 1.5rem;">
+                        <label
+                            style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: var(--foreground);">Service
+                            Address *</label>
+                        <textarea id="address" required placeholder="Enter complete address where service is needed"
+                            style="width: 100%; padding: 0.75rem; border: 2px solid var(--border); border-radius: 0.5rem; font-family: 'Poppins', sans-serif; font-size: 1rem; min-height: 100px; resize: vertical;"></textarea>
+                    </div>
+
+                    <div style="margin-bottom: 1.5rem;">
+                        <label
+                            style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: var(--foreground);">Preferred
+                            Date *</label>
+                        <input type="date" id="date" required
+                            style="width: 100%; padding: 0.75rem; border: 2px solid var(--border); border-radius: 0.5rem; font-family: 'Poppins', sans-serif; font-size: 1rem;">
+                    </div>
+
+                    <div style="margin-bottom: 1.5rem;">
+                        <label
+                            style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: var(--foreground);">Preferred
+                            Time *</label>
+                        <select id="time" required
+                            style="width: 100%; padding: 0.75rem; border: 2px solid var(--border); border-radius: 0.5rem; font-family: 'Poppins', sans-serif; font-size: 1rem; background: white;">
+                            <option value="">Select time slot</option>
+                            <option value="9:00 AM - 12:00 PM">Morning (9:00 AM - 12:00 PM)</option>
+                            <option value="12:00 PM - 3:00 PM">Afternoon (12:00 PM - 3:00 PM)</option>
+                            <option value="3:00 PM - 6:00 PM">Evening (3:00 PM - 6:00 PM)</option>
+                        </select>
+                    </div>
+
+                    <div style="margin-bottom: 1.5rem;">
+                        <label
+                            style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: var(--foreground);">Additional
+                            Requirements</label>
+                        <textarea id="message" placeholder="Any specific requirements or instructions"
+                            style="width: 100%; padding: 0.75rem; border: 2px solid var(--border); border-radius: 0.5rem; font-family: 'Poppins', sans-serif; font-size: 1rem; min-height: 80px; resize: vertical;"></textarea>
+                    </div>
+
+                    <button type="submit" class="service-card-link"
+                        style="width: 100%; padding: 1rem; font-size: 1.1rem; display: flex; align-items: center; justify-content: center; gap: 0.5rem; cursor: pointer;">
+                        <i class="fab fa-whatsapp" style="font-size: 1.5rem;"></i> Book via WhatsApp
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Same as index.html) -->
+    <footer class="footer">
+        <div class="container mobile-footer">
+            <div class="accordion-section">
+                <button class="accordion-btn">
+                    About Us
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="accordion-content">
+                    <p style="color: hsl(0, 0%, 80%); margin-bottom: 1rem;">Tikawala Prime is your trusted partner for
+                        all home services in Bokaro, Jharkhand. We provide professional and reliable services at your
+                        doorstep.</p>
+                </div>
+            </div>
+
+            <div class="accordion-section">
+                <button class="accordion-btn">
+                    Contact Us
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="accordion-content">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>tikawalagroupprimecleansolutions@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <a href="tel:+918789772081" style="color: inherit; text-decoration: none;">8789772081</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Bokaro, Jharkhand</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="desktop-footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-column">
+                        <h3>Tikawala Prime</h3>
+                        <p style="color: hsl(0, 0%, 70%); margin-top: 1rem;">Your trusted partner for all home services
+                            in Bokaro, Jharkhand.</p>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#" onclick="openService('Cleaning Services'); return false;">Cleaning</a></li>
+                            <li><a href="#" onclick="openService('Pest Control'); return false;">Pest Control</a></li>
+                            <li><a href="#" onclick="openService('Home Painting'); return false;">Painting</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Contact Us</h3>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>tikawalagroupprimecleansolutions@gmail.com</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <a href="tel:+918789772081"
+                                    style="color: inherit; text-decoration: none;">8789772081</a>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Bokaro, Jharkhand</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>&copy; 2025 Tikawala Prime. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mobile-copyright">
+            <p>&copy; 2025 Tikawala Prime. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="service.js"></script>
+</body>
+
+</html>
