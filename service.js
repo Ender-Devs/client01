@@ -1,4 +1,9 @@
-// Service Database
+// ===================================================
+// TIKAWALA PRIME - SERVICE.JS
+// Complete JavaScript for Service Detail Pages
+// ===================================================
+
+// ===== SERVICE DATA WITH COMPLETE INFORMATION =====
 const serviceData = {
     'Cleaning Services': {
         icon: '🧹',
@@ -40,6 +45,48 @@ const serviceData = {
             { icon: '✓', title: 'Packages', desc: 'Daily/weekly plans available' },
             { icon: '✓', title: 'Uniformed Staff', desc: 'Professional appearance' },
             { icon: '✓', title: 'Quality Checks', desc: 'Regular quality assurance' }
+        ]
+    },
+    'Bathroom Cleaning': {
+        icon: '🚿',
+        description: 'Specialized bathroom cleaning and sanitization service. We deep clean tiles, fixtures, drains, and ensure complete hygiene.',
+        features: [
+            { icon: '✓', title: 'Tile Cleaning', desc: 'Deep tile and grout cleaning' },
+            { icon: '✓', title: 'Fixture Polish', desc: 'Taps and fixtures polishing' },
+            { icon: '✓', title: 'Drain Cleaning', desc: 'Drain and pipe cleaning' },
+            { icon: '✓', title: 'Mirror Clean', desc: 'Spotless mirror cleaning' },
+            { icon: '✓', title: 'Sanitization', desc: 'Complete sanitization' },
+            { icon: '✓', title: 'Anti-Bacterial', desc: 'Anti-bacterial treatment' },
+            { icon: '✓', title: 'Odor Removal', desc: 'Fresh fragrance treatment' },
+            { icon: '✓', title: 'Quick Service', desc: '1-2 hour completion' }
+        ]
+    },
+    'Kitchen Cleaning': {
+        icon: '🍳',
+        description: 'Professional kitchen deep cleaning including appliances, cabinets, and surfaces. We ensure your kitchen is hygienic and sparkling clean.',
+        features: [
+            { icon: '✓', title: 'Appliance Clean', desc: 'Stove, oven, microwave cleaning' },
+            { icon: '✓', title: 'Cabinet Cleaning', desc: 'Inside and outside cabinets' },
+            { icon: '✓', title: 'Counter Tops', desc: 'All surfaces sanitized' },
+            { icon: '✓', title: 'Sink & Drain', desc: 'Deep sink and drain cleaning' },
+            { icon: '✓', title: 'Tile & Grout', desc: 'Kitchen tile cleaning' },
+            { icon: '✓', title: 'Chimney Clean', desc: 'Chimney degreasing' },
+            { icon: '✓', title: 'Fridge Clean', desc: 'Refrigerator cleaning option' },
+            { icon: '✓', title: 'Pest-Free', desc: 'Pest prevention tips' }
+        ]
+    },
+    'Carpet Cleaning': {
+        icon: '🧺',
+        description: 'Professional carpet and rug cleaning using advanced equipment. We remove stains, dirt, and allergens effectively.',
+        features: [
+            { icon: '✓', title: 'Deep Vacuum', desc: 'Industrial vacuum cleaning' },
+            { icon: '✓', title: 'Stain Removal', desc: 'Tough stain treatment' },
+            { icon: '✓', title: 'Steam Clean', desc: 'Hot water extraction' },
+            { icon: '✓', title: 'Odor Remove', desc: 'Deodorization treatment' },
+            { icon: '✓', title: 'Fast Drying', desc: 'Quick drying process' },
+            { icon: '✓', title: 'Fiber Safe', desc: 'Safe for all carpet types' },
+            { icon: '✓', title: 'Eco Products', desc: 'Eco-friendly solutions' },
+            { icon: '✓', title: 'Allergen Free', desc: 'Removes allergens' }
         ]
     },
     'Pest Control': {
@@ -84,6 +131,34 @@ const serviceData = {
             { icon: '✓', title: 'Follow-up', desc: 'Inspection after treatment' }
         ]
     },
+    'Cockroach Control': {
+        icon: '🪳',
+        description: 'Specialized cockroach control treatment that targets all cockroach species. Long-lasting protection for your home.',
+        features: [
+            { icon: '✓', title: 'Gel Treatment', desc: 'Advanced gel application' },
+            { icon: '✓', title: 'Spray Treatment', desc: 'Cracks and crevices spray' },
+            { icon: '✓', title: 'All Areas', desc: 'Kitchen, bathroom, all rooms' },
+            { icon: '✓', title: 'Odorless', desc: 'No strong chemical smell' },
+            { icon: '✓', title: 'Pet Safe', desc: 'Safe for pets' },
+            { icon: '✓', title: '90 Days Cover', desc: '3-month warranty' },
+            { icon: '✓', title: 'Free Revisit', desc: 'If pests return' },
+            { icon: '✓', title: 'Same Day', desc: 'Same day service available' }
+        ]
+    },
+    'Termite Control': {
+        icon: '🪵',
+        description: 'Professional termite treatment and prevention services. Protect your property from termite damage with our advanced solutions.',
+        features: [
+            { icon: '✓', title: 'Pre-Treatment', desc: 'Pre-construction treatment' },
+            { icon: '✓', title: 'Post-Treatment', desc: 'Post-construction treatment' },
+            { icon: '✓', title: 'Wood Treatment', desc: 'Furniture and wood treatment' },
+            { icon: '✓', title: 'Soil Treatment', desc: 'Anti-termite soil treatment' },
+            { icon: '✓', title: 'Drilling', desc: 'Wall drilling if needed' },
+            { icon: '✓', title: '5-Year Warranty', desc: 'Long-term protection' },
+            { icon: '✓', title: 'Annual Check', desc: 'Annual inspection included' },
+            { icon: '✓', title: 'Certified', desc: 'Licensed professionals' }
+        ]
+    },
     'Home Painting': {
         icon: '🎨',
         description: 'Transform your space with our professional painting services. We offer interior and exterior painting using premium quality paints and expert techniques. Our painters ensure clean execution with attention to detail.',
@@ -124,6 +199,20 @@ const serviceData = {
             { icon: '✓', title: 'UV Resistant', desc: 'Sun protection coating' },
             { icon: '✓', title: 'Safety', desc: 'Safety equipment used' },
             { icon: '✓', title: 'Long-Lasting', desc: 'Durable finish' }
+        ]
+    },
+    'Waterproofing': {
+        icon: '💧',
+        description: 'Professional waterproofing solutions for roofs, walls, and bathrooms. Prevent water damage and leakage with our advanced waterproofing systems.',
+        features: [
+            { icon: '✓', title: 'Roof Waterproof', desc: 'Terrace waterproofing' },
+            { icon: '✓', title: 'Bathroom Seal', desc: 'Bathroom waterproofing' },
+            { icon: '✓', title: 'Wall Treatment', desc: 'External wall treatment' },
+            { icon: '✓', title: 'Crack Sealing', desc: 'Crack filling and sealing' },
+            { icon: '✓', title: 'Quality Materials', desc: 'Premium waterproofing materials' },
+            { icon: '✓', title: 'Leak Detection', desc: 'Leak source identification' },
+            { icon: '✓', title: '5-Year Warranty', desc: 'Long-term guarantee' },
+            { icon: '✓', title: 'Post-Monsoon', desc: 'After-monsoon inspection' }
         ]
     },
     'Spa and Salon': {
@@ -167,35 +256,92 @@ const serviceData = {
             { icon: '✓', title: 'Detan', desc: 'Detan treatment' },
             { icon: '✓', title: 'Products', desc: 'Professional products' }
         ]
+    },
+    'Spa Services': {
+        icon: '🧖',
+        description: 'Relaxing spa and wellness treatments at home. Rejuvenate your body and mind with our professional spa services.',
+        features: [
+            { icon: '✓', title: 'Body Massage', desc: 'Full body relaxation massage' },
+            { icon: '✓', title: 'Head Massage', desc: 'Stress-relief head massage' },
+            { icon: '✓', title: 'Foot Massage', desc: 'Foot reflexology' },
+            { icon: '✓', title: 'Aroma Therapy', desc: 'Essential oil therapy' },
+            { icon: '✓', title: 'Body Scrub', desc: 'Exfoliation treatment' },
+            { icon: '✓', title: 'Face Massage', desc: 'Facial massage included' },
+            { icon: '✓', title: 'Customized', desc: 'Personalized packages' },
+            { icon: '✓', title: 'Premium Oils', desc: 'Quality massage oils' }
+        ]
+    },
+    'Bridal Makeup': {
+        icon: '👰',
+        description: 'Complete bridal makeup and grooming packages. Look stunning on your special day with our expert bridal services.',
+        features: [
+            { icon: '✓', title: 'HD Makeup', desc: 'High-definition bridal makeup' },
+            { icon: '✓', title: 'Hair Styling', desc: 'Bridal hair styling' },
+            { icon: '✓', title: 'Pre-Bridal', desc: 'Pre-bridal treatments' },
+            { icon: '✓', title: 'Mehendi', desc: 'Mehendi application' },
+            { icon: '✓', title: 'Draping', desc: 'Saree draping service' },
+            { icon: '✓', title: 'Trial Makeup', desc: 'Free trial session' },
+            { icon: '✓', title: 'Touch-ups', desc: 'Touch-up services' },
+            { icon: '✓', title: 'Premium Brands', desc: 'International makeup brands' }
+        ]
     }
 };
 
-// Load service details
-document.addEventListener('DOMContentLoaded', () => {
-    const urlParams = new URLSearchParams(window.location.search);
-    const serviceName = urlParams.get('service');
+// ===== DOM ELEMENTS =====
+const serviceName = document.getElementById('serviceName');
+const serviceIcon = document.getElementById('serviceIcon');
+const serviceDescription = document.getElementById('serviceDescription');
+const featuresList = document.getElementById('featuresList');
+const bookingForm = document.getElementById('bookingForm');
+const dateInput = document.getElementById('date');
 
-    if (serviceName && serviceData[serviceName]) {
-        loadServiceDetails(serviceName);
+// ===== LOAD SERVICE DETAILS =====
+document.addEventListener('DOMContentLoaded', () => {
+    // Get service name from URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const service = urlParams.get('service');
+
+    if (service && serviceData[service]) {
+        loadServiceDetails(service);
     } else {
+        // Default to Cleaning Services if no service specified
         loadServiceDetails('Cleaning Services');
     }
 
-    const dateInput = document.getElementById('date');
-    const today = new Date().toISOString().split('T')[0];
-    dateInput.setAttribute('min', today);
+    // Set minimum date to today
+    if (dateInput) {
+        const today = new Date().toISOString().split('T')[0];
+        dateInput.setAttribute('min', today);
+    }
 
-    document.getElementById('bookingForm').addEventListener('submit', handleBooking);
+    // Handle form submission
+    if (bookingForm) {
+        bookingForm.addEventListener('submit', handleBooking);
+    }
 });
 
+// ===== LOAD SERVICE DETAILS FUNCTION =====
 function loadServiceDetails(serviceName) {
     const service = serviceData[serviceName];
 
+    if (!service) {
+        console.error('Service not found:', serviceName);
+        return;
+    }
+
+    // Update page title
     document.getElementById('pageTitle').textContent = `${serviceName} - Tikawala Prime`;
+
+    // Update service icon
     document.getElementById('serviceIcon').textContent = service.icon;
+
+    // Update service name
     document.getElementById('serviceName').textContent = serviceName;
+
+    // Update service description
     document.getElementById('serviceDescription').textContent = service.description;
 
+    // Update features list
     const featuresList = document.getElementById('featuresList');
     featuresList.innerHTML = '';
 
@@ -211,51 +357,92 @@ function loadServiceDetails(serviceName) {
     });
 }
 
+// ===== HANDLE BOOKING FORM SUBMISSION =====
 function handleBooking(e) {
     e.preventDefault();
 
+    // Get form data
     const formData = {
         service: document.getElementById('serviceName').textContent,
         name: document.getElementById('name').value,
         phone: document.getElementById('phone').value,
-        email: document.getElementById('email').value,
+        email: document.getElementById('email').value || 'Not provided',
         address: document.getElementById('address').value,
         date: document.getElementById('date').value,
         time: document.getElementById('time').value,
-        message: document.getElementById('message').value
+        message: document.getElementById('message').value || 'None'
     };
 
+    // Validate phone number
     if (formData.phone.length !== 10 || !/^\d+$/.test(formData.phone)) {
-        alert('Please enter a valid 10-digit phone number');
+        alert('⚠️ Please enter a valid 10-digit phone number');
+        document.getElementById('phone').focus();
         return;
     }
 
+    // Format date
+    const date = new Date(formData.date);
+    const formattedDate = date.toLocaleDateString('en-IN', {
+        weekday: 'long',
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+    });
+
+    // Create WhatsApp message
     const whatsappMessage = `
-*New Service Booking Request*
+🏠 *NEW SERVICE BOOKING REQUEST*
 
-*Service:* ${formData.service}
+📋 *Service Details:*
+Service: ${formData.service}
 
-*Customer Details:*
+👤 *Customer Information:*
 Name: ${formData.name}
 Phone: ${formData.phone}
-Email: ${formData.email || 'Not provided'}
+Email: ${formData.email}
 
-*Service Details:*
+📍 *Service Location:*
 Address: ${formData.address}
-Preferred Date: ${formData.date}
-Preferred Time: ${formData.time}
+City: Bokaro, Jharkhand
 
-*Additional Requirements:*
-${formData.message || 'None'}
+📅 *Preferred Schedule:*
+Date: ${formattedDate}
+Time: ${formData.time}
+
+💬 *Additional Requirements:*
+${formData.message}
 
 ---
-Please confirm the booking at your earliest convenience.
+_Sent from Tikawala Prime Website_
     `.trim();
 
+    // Encode message for URL
     const encodedMessage = encodeURIComponent(whatsappMessage);
+
+    // WhatsApp business number (8789772081)
     const whatsappNumber = '918789772081';
+
+    // Create WhatsApp URL
     const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
 
+    // Open WhatsApp in new tab
     window.open(whatsappURL, '_blank');
-    alert('Redirecting to WhatsApp... Please send the message to complete your booking!');
+
+    // Show success message
+    alert('✅ Redirecting to WhatsApp...\n\nPlease send the message to complete your booking!\n\nOur team will contact you shortly to confirm.');
+
+    // Optional: Reset form after submission
+    // bookingForm.reset();
 }
+
+// ===== MAKE FUNCTION GLOBALLY ACCESSIBLE =====
+window.openService = function (serviceName) {
+    window.location.href = `service.html?service=${encodeURIComponent(serviceName)}`;
+};
+
+// ===== TRACK PAGE VIEW =====
+console.log('📄 Service Page Loaded');
+console.log('📍 Location: Bokaro, Jharkhand');
+console.log('📞 WhatsApp: 8789772081');
+
+// ===== END OF SERVICE.JS =====
