@@ -329,8 +329,15 @@ function loadServiceDetails(serviceName) {
         return;
     }
 
-    // Update page title
-    document.getElementById('pageTitle').textContent = `${serviceName} - Tikawala Prime`;
+    // Update page title with SEO-friendly text
+    const seoTitle = `${serviceName} in Bokaro - Tikawala Group Prime Clean Solutions`;
+    document.getElementById('pageTitle').textContent = seoTitle;
+    document.querySelector('meta[property="og:title"]').setAttribute('content', seoTitle);
+
+    // Update meta description
+    const seoDescription = `Professional ${serviceName.toLowerCase()} services in Bokaro, Jharkhand. Expert team, 24/7 support, 20% discount. Book now at Tikawala Prime!`;
+    document.querySelector('meta[name="description"]').setAttribute('content', seoDescription);
+    document.querySelector('meta[property="og:description"]').setAttribute('content', seoDescription);
 
     // Update service icon
     document.getElementById('serviceIcon').textContent = service.icon;
@@ -355,6 +362,40 @@ function loadServiceDetails(serviceName) {
         `;
         featuresList.appendChild(featureDiv);
     });
+
+    // Add schema markup for service
+    const serviceSchema = {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": serviceName + " in Bokaro",
+        "description": service.description,
+        "provider": {
+            "@type": "LocalBusiness",
+            "name": "Tikawala Group Prime Clean Solutions",
+            "telephone": "+918789772081",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Bokaro",
+                "addressLocality": "Bokaro",
+                "addressRegion": "Jharkhand",
+                "addressCountry": "IN"
+            }
+        },
+        "areaServed": {
+            "@type": "City",
+            "name": "Bokaro",
+            "addressCountry": "IN"
+        },
+        "priceRange": "₹₹"
+    };
+
+    let schemaScript = document.querySelector('script[type="application/ld+json"]');
+    if (!schemaScript) {
+        schemaScript = document.createElement('script');
+        schemaScript.type = 'application/ld+json';
+        document.head.appendChild(schemaScript);
+    }
+    schemaScript.textContent = JSON.stringify(serviceSchema);
 }
 
 // ===== HANDLE BOOKING FORM SUBMISSION =====

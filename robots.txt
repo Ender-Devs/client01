@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+Disallow: /private/
+
+# Google Search Console
+User-agent: Googlebot
+Allow: /
+
+# Bing
+User-agent: Bingbot
+Allow: /
+
+# Sitemaps
+Sitemap: https://tikawalagroup.com/sitemap.xml
+
+# Crawl delay
+Crawl-delay: 1
