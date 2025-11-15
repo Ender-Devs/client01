@@ -9,67 +9,139 @@ const serviceDatabase = {
         name: 'Cleaning Services',
         icon: '🧹',
         description: 'Professional home & office cleaning',
-        keywords: ['clean', 'cleaning', 'house', 'home', 'office', 'deep clean', 'sanitize', 'bathroom', 'kitchen', 'carpet', 'sofa']
+        keywords: ['clean', 'cleaning', 'house', 'home', 'office', 'deep clean', 'sanitize']
     },
     'deep-clean': {
         name: 'Deep Home Cleaning',
-        icon: '🧹',
-        description: 'Comprehensive deep cleaning service',
-        keywords: ['deep', 'thorough', 'complete', 'full house', 'intensive']
+        icon: '🏡',
+        description: 'Comprehensive cleaning for your entire home, ensuring every corner is spotless and sanitized.',
+        keywords: ['deep', 'home', 'thorough', 'complete', 'full house', 'intensive']
     },
     'commercial': {
         name: 'Commercial Cleaning',
         icon: '🏢',
-        description: 'Professional office cleaning',
-        keywords: ['commercial', 'office', 'business', 'workplace']
+        description: 'Professional cleaning services tailored for commercial spaces, maintaining a pristine and healthy work environment.',
+        keywords: ['commercial', 'office', 'business', 'workplace', 'retail']
     },
-    'pest': {
-        name: 'Pest Control',
-        icon: '🐛',
-        description: 'Complete pest management solutions',
-        keywords: ['pest', 'bug', 'insect', 'cockroach', 'termite', 'rodent', 'rat', 'mosquito', 'ant']
-    },
-    'bedbugs': {
-        name: 'Bed Bug Control',
-        icon: '🛏️',
-        description: 'Specialized bed bug treatment',
-        keywords: ['bed bug', 'bedbug', 'mattress']
-    },
-    'painting': {
-        name: 'Home Painting',
-        icon: '🎨',
-        description: 'Interior & exterior painting services',
-        keywords: ['paint', 'painting', 'color', 'wall', 'interior', 'exterior', 'waterproof']
-    },
-    'interior-paint': {
-        name: 'Interior Painting',
-        icon: '🎨',
-        description: 'Professional interior painting',
-        keywords: ['interior', 'inside', 'room', 'walls']
-    },
-    'exterior-paint': {
-        name: 'Exterior Painting',
+    'empty-home': {
+        name: 'Empty Home Cleaning',
         icon: '🏠',
-        description: 'Durable exterior painting',
-        keywords: ['exterior', 'outside', 'facade', 'building']
+        description: 'Thorough cleaning for empty homes, perfect for moving in or out, leaving the space fresh and ready.',
+        keywords: ['empty', 'move', 'moving', 'vacant']
     },
-    'salon': {
-        name: 'Spa and Salon',
-        icon: '💆',
-        description: 'Beauty & wellness services at home',
-        keywords: ['salon', 'spa', 'beauty', 'hair', 'facial', 'massage', 'makeup', 'manicure', 'pedicure']
+    'interior-clean': {
+        name: 'Interior Home Cleaning',
+        icon: '✨',
+        description: 'Detailed interior cleaning services, focusing on all surfaces, floors, and fixtures within your home.',
+        keywords: ['interior', 'inside', 'home', 'surfaces']
     },
-    'women-salon': {
-        name: 'Salon for Women',
-        icon: '💇‍♀️',
-        description: 'Complete women salon services',
-        keywords: ['women', 'ladies', 'female', 'bridal']
+    'bathroom': {
+        name: 'Bathroom Cleaning',
+        icon: '�',
+        description: 'Experience pristine bathroom hygiene with our specialized cleaning techniques. We tackle tough stains, sanitize surfaces, and leave your bathroom fresh and gleaming.',
+        keywords: ['bathroom', 'washroom', 'toilet', 'shower', 'hygiene']
     },
-    'men-salon': {
-        name: 'Salon for Men',
-        icon: '💇‍♂️',
-        description: 'Professional men grooming',
-        keywords: ['men', 'male', 'gents', 'barber', 'beard']
+    'kitchen': {
+        name: 'Kitchen Cleaning',
+        icon: '�',
+        description: 'Transform your kitchen into a spotless culinary haven. Our comprehensive deep cleaning service covers every surface, appliance, and corner to ensure a hygienic and sparkling kitchen environment.',
+        keywords: ['kitchen', 'appliance', 'stove', 'utensil', 'cooking']
+    },
+    'sofa': {
+        name: 'Sofa Cleaning',
+        icon: '🛋️',
+        description: 'Revitalize your sofas with our professional cleaning, removing dirt, stains, and odors for a fresh look and feel.',
+        keywords: ['sofa', 'couch', 'furniture', 'upholstery']
+    },
+    'carpet': {
+        name: 'Carpet Cleaning',
+        icon: '💠',
+        description: 'Deep cleaning for carpets, removing embedded dirt and allergens to restore their original vibrancy and hygiene.',
+        keywords: ['carpet', 'rug', 'floor', 'mat']
+    },
+    'chair': {
+        name: 'Chair Cleaning',
+        icon: '🪑',
+        description: 'Expert cleaning for various types of chairs, ensuring they are spotless and comfortable.',
+        keywords: ['chair', 'furniture', 'seating']
+    },
+    'mattress': {
+        name: 'Mattress Cleaning',
+        icon: '🛏️',
+        description: 'Sanitize and refresh your mattresses, eliminating dust mites and allergens for a healthier sleep environment.',
+        keywords: ['mattress', 'bed', 'sleep', 'hygiene']
+    },
+    'balcony': {
+        name: 'Balcony Cleaning',
+        icon: '�',
+        description: 'Thorough cleaning of your balcony area, including railings, floors, and windows, to make it sparkling clean.',
+        keywords: ['balcony', 'terrace', 'outdoor', 'patio']
+    },
+    'windows': {
+        name: 'Windows And Door Cleaning',
+        icon: '🪟',
+        description: 'Professional cleaning for all your windows and doors, ensuring streak-free glass and sparkling frames.',
+        keywords: ['window', 'door', 'glass', 'frame']
+    },
+    'refrigerator': {
+        name: 'Refrigerator Cleaning',
+        icon: '🗄️',
+        description: 'Deep cleaning and sanitization of your refrigerator, inside and out, removing odors and food residues.',
+        keywords: ['refrigerator', 'fridge', 'kitchen', 'appliance']
+    },
+    'water-tank': {
+        name: 'Water Tank Cleaning',
+        icon: '🌊',
+        description: 'Specialized cleaning for water tanks, ensuring clean and safe water supply for your household or business.',
+        keywords: ['water tank', 'tank', 'water', 'supply']
+    },
+    'bedroom': {
+        name: 'Bedroom Cleaning',
+        icon: '�️',
+        description: 'Comprehensive cleaning for bedrooms, including dusting, vacuuming, and tidying, for a serene sleeping space.',
+        keywords: ['bedroom', 'room', 'bed', 'sleep']
+    },
+    'hotel': {
+        name: 'Hotel Interior Cleaning',
+        icon: '🏨',
+        description: 'High-standard interior cleaning services for hotels, ensuring guest satisfaction and a pristine environment.',
+        keywords: ['hotel', 'resort', 'hospitality', 'guest']
+    },
+    'microwave': {
+        name: 'Microwave Cleaning',
+        icon: '📟',
+        description: 'Thorough cleaning of your microwave oven, removing food splatters and odors for hygienic cooking.',
+        keywords: ['microwave', 'oven', 'kitchen', 'appliance']
+    },
+    'cabinet': {
+        name: 'Cabinet Cleaning',
+        icon: '🚪',
+        description: 'Detailed cleaning of kitchen and other cabinets, inside and out, for an organized and clean storage space.',
+        keywords: ['cabinet', 'storage', 'kitchen', 'organization']
+    },
+    'party': {
+        name: 'Party Cleaning',
+        icon: '🎉',
+        description: 'Post-party cleanup services to take care of all the mess, leaving your space neat and tidy.',
+        keywords: ['party', 'event', 'cleanup', 'after']
+    },
+    'office': {
+        name: 'Office Cleaning',
+        icon: '🏢',
+        description: 'Reliable and efficient office cleaning services to maintain a clean, healthy, and productive workspace.',
+        keywords: ['office', 'workspace', 'work', 'professional']
+    },
+    'villa': {
+        name: 'Villa Cleaning',
+        icon: '🏠',
+        description: 'Exclusive cleaning services for villas, ensuring every part of your spacious home is impeccably clean.',
+        keywords: ['villa', 'mansion', 'large home', 'luxury']
+    },
+    'landscape': {
+        name: 'Landscape & Turf',
+        icon: '🌿',
+        description: 'Lawn care, trimming, and turf upkeep for beautiful outdoor spaces.',
+        keywords: ['landscape', 'lawn', 'garden', 'outdoor', 'turf', 'green']
     }
 };
 
